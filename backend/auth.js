@@ -34,7 +34,7 @@ const generateRefreshToken = (userInfo) =>{
 const generateAccessToken = (userInfo) => {
     return jwt.sign(userInfo,
         process.env.JWT_ACCESS_SECRET_KEY,
-        {expiresIn: "1m"}
+        {expiresIn: "10m"}
     )
 }
 
